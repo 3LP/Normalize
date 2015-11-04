@@ -1,0 +1,42 @@
+These are all todo items. Pick one, do it, then remove it. Thanks
+-------------------------------------------------------------------------
+
+- in our kt API, we should add a method so Leap developer can ask us for current hand locations
+    - this mainly is just needed for us to make our demo app (so we don't need two Leap listeners, one
+        in our library and one in our demo app), but it could be handy for Leap developers if they
+        don't want to deal with listening for Leap onFrame() calls, etc... mainly it's for our demo :)
+
+- add API for leap C++ developers: allows creating shapes in our world
+    - make and standardize interface to fcns that make physics shapes, those are api methods
+    - each shape the dev app creates contains a fcn_ptr callback for when hand collides with that object
+
+- FIX: ARCH getting messed up when trying to compile app as 64bit. To reproduce, set all sub-projects to release 64bit, link fails
+
+- add single large softbody around hand so user can feel object coming before contact
+
+- When Leap has new hand data, we read the joint x,y,z from mcp.prevJoint(), but would be better to also read nextJoint() and start
+    to build up actual bones between joints, instead of just joint spheres. This will allow better interaction with objects since
+    there's more hand area space to interact with those devices, instead of just the point contact we have today.
+
+    - ie, instead of spheres for joints, use rectangles so also makes more of hand shape, thus better interation with edge collision detection
+
+- draw helpers shouldn't need to know so much about physics engine, collision bodies, etc. We should just pass draw helpers what it 
+    needs and that's all. Just a size, extents, etc
+
+- instead of doing all the LM hand_vec copy stuff, and then needing to access from in draw_helpers, just save off the LM frames, or keep
+    a static pointer to controller that everyone can use, even LM dev can use this controller in their app
+    
+- cam_pos_track_hand: make the panning slower, outside an is_closest_to circle, the setTarget is progressively moved faster the closer
+    to the wall you get, this then allows you to move around the room and then work on stuff, ie, shift focus and work in a 3d space
+
+
+Notes
+-------------------------------------------------------------------------
+- when uncommenting this line, 
+
+    // camera always points at ball!
+    //cam.setTarget(TW.get_object_coordinates()*CAM_SCALE);
+
+setTarget should point half-way between sphere and hands avg/last scene location
+
+

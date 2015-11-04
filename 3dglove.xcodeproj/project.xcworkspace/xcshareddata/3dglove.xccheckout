@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FA15C205-7A82-462B-8746-1681A7A5E985</string>
+	<key>IDESourceControlProjectName</key>
+	<string>3dglove</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>83F29C5E6186A7D0116662F436653B2AC8245497</key>
+		<string>https://github.com/KinaTouch/3dglove.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>3dglove.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>83F29C5E6186A7D0116662F436653B2AC8245497</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KinaTouch/3dglove.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>83F29C5E6186A7D0116662F436653B2AC8245497</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83F29C5E6186A7D0116662F436653B2AC8245497</string>
+			<key>IDESourceControlWCCName</key>
+			<string>3dglove</string>
+		</dict>
+	</array>
+</dict>
+</plist>
